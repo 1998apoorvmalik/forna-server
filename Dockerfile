@@ -20,6 +20,4 @@ WORKDIR /forna-server
 RUN pip install -r requirements.txt
 RUN cp ./docker-fix/__init__.py /usr/local/lib/python3.9/logging/__init__.py
 
-ENTRYPOINT [ "python" ]
-
-CMD [ "forna_server.py", "-s", "-d", "-o", "0.0.0.0", "-p", "8080" ]
+CMD python forna_server.py -s -d -o 0.0.0.0 -p 8080
