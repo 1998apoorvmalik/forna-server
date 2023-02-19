@@ -1,4 +1,5 @@
 numpy
+cython
 Flask
 forgi
 Werkzeug
